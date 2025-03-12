@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MgC Product</title>
+    <link rel="stylesheet" href="style.css"> 
+     <script src="script.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <img src="img/Logo-left.png" alt="img" class="logo"> 
+        <div class="nav">
+            <button onclick="navigate('home')">Home</button>
+            <button onclick="navigate('shop')">Shop</button>
+            <button onclick="navigate('about')">About</button>
+            <button onclick="navigate('company')">Our Company</button>
+        </div>
+        <img src="img/Logo-right.png" alt="img" class="logo-right"> 
+    </div>
+   
+   
+    <div class="container" id="home">
+        <h1>Beauty on your own Terms.</h1>
+        <p>With our Serenity Breeze, a lightweight and refreshing spray designed to neutralize odor and keep you feeling revitalized by setting your under-arm product.</p>
+        <button class="button" onclick="navigate('shop')">Shop Now</button>
+    </div>
+
+
+    <div class="container" id="shop" style="display: none;">
+        <div class="product">
+            <img src="product-image.jpg" alt="Serenity Breeze"> 
+            <p>50-ML Serenity Breeze. Non-Perfume</p>
+            <p>₱100.00</p>
+            <button class="button" onclick="buyNow()">Buy Now</button>
+            <button class="button" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="container" id="about" style="display: none;">
+        <h2><b>Our Mission:</b></h2>
+        <p>At MG Clinic, our mission is to provide high-quality hygiene essentials that promote health and well-being for individuals and communities. We are dedicated to delivering effective, affordable, and sustainable products that empower our customers to maintain cleanliness and prevent illness. Through continuous innovation and a commitment to excellence, we strive to be a trusted partner in health, enhancing the quality of life for all we serve.</p>
+        <h3><b>Our Vision:</b></h3>
+        <p>At MG Clinic, our vision is to be the leading provider of hygiene essentials, ensuring that every individual has access to products that promote health and well-being. We are committed to delivering high-quality, effective, and affordable hygiene solutions that empower our community to lead healthier lives. Through innovation and a dedication to excellence, we aim to set the standard for hygiene essentials, fostering a culture of cleanliness and health in every home and workplace. 
+
+</p>
+    </div>
+
+    <div class="container" id="company" style="display: none;">
+        <h2>Our Company:</h2>
+        <p>Name of Company
+MG Clinic (Maintaining Good Health with Innovation, Integrity, Honesty, and Empathy) The company’s name MG Clinic is made up of the central purpose of our existence that is to maintain the Best Health as we are Innovation, Integrity, Honesty, and Empathy. Each value represents us striving to be a good, affordable, and sustainable developer of the essentials of health and hygiene as well as suppliers to the community's health and well-being.</p>
+       <p><b>
+G-mail
+•	mg.wellnessclinic@gmail.com 
+       </b></p>
+       <p><b>Facebook Page
+•	MG’s Clinic
+       </b></p>
+       <p><b>Contact Number
+•	09515893589</b></p>
+    </div>
+
+    <script>
+    function navigate(section) {
+        document.querySelectorAll('.container').forEach(div => div.style.display = 'none');
+        document.getElementById(section).style.display = 'flex';
+    }
+
+    function buyNow() {
+        window.location.href = 'checkout.html';  // Redirects to the new checkout page
+    }
+
+    function addToCart() {
+        alert("Item added to cart.");
+    }
+</script>
+
+</body>
+</html>
+</html>
