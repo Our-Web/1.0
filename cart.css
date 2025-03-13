@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: black;
+    color: rgb(32, 10, 10);
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gold;
+    color: white;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gold;
+    color: white;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+#cart-items p {
+    color: gold;  /* Change to white if needed: color: white; */
+    font-size: 18px; /* Adjust size if necessary */
+    font-weight: bold;
+}
+
+/* Style for + / - buttons in the cart */
+#cart-items button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 20px; /* Increase text size */
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+#cart-items button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style for the Buy Now button */
+#buy-now {
+    background-color: white;
+    color: black;
+    padding: 15px 30px; /* Bigger Buy Now button */
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: block; /* Centering the button */
+    margin: 20px auto;
+}
+
+/* Hover effect for Buy Now */
+#buy-now:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style for quantity number */
+#cart-items span {
+    font-size: 20px; /* Increase text size */
+    font-weight: bold;
+    margin: 0 10px; /* Add space between + / - buttons */
+    color: gold; /* Change color if needed */
+}
